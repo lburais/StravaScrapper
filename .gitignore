@@ -1,0 +1,9 @@
+*.pdf
+__pycache__/
+activities/
+photos/
+raw_activities/
+pages/
+icons/
+data/
+images/

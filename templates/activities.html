@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strava Activities</title>
+</head>
+<body>
+    <h1>Your Strava Activities</h1>
+    <ul>
+        {% for activity in activities %}
+            <li>
+                <strong>{{ activity.name }}</strong> <br>
+                Date: {{ activity.start_date }} <br>
+                <img src="{{ activity.photos.primary.urls['600'] if activity.photos and 'primary' in activity.photos else '' }}" alt="No Image" width="200">
+                <hr>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
