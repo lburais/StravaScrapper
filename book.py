@@ -413,31 +413,3 @@ def main():
     
     if args.open:
         os.system(f"/usr/bin/open {OUTPUT_FILE}")
-
-if __name__ == "__main__":
-    main()
-    
-    """
-    # Get the list of available fonts
-    available_fonts = c.getAvailableFonts()
-
-    # Print the available fonts
-    print("Available fonts in ReportLab's Canvas:")
-    for font in available_fonts:
-        print(font)
-
-    Courier
-    Courier-Bold
-    Courier-BoldOblique
-    Courier-Oblique
-    Helvetica
-    Helvetica-Bold
-    Helvetica-BoldOblique
-    Helvetica-Oblique
-    Symbol
-    Times-Bold
-    Times-BoldItalic
-    Times-Italic
-    Times-Roman
-    ZapfDingbats
-    """
